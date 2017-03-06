@@ -41,6 +41,7 @@ void pit3_isr(void){
 }
 
 // function for starting PIT module
+// args: none
 void startPIT(void){
     // enable clock and pit module
     SIM_SCGC6 |= SIM_SCGC6_PIT;
