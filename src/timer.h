@@ -6,6 +6,9 @@
 #ifndef TIMER_H_
 #define TIMER_H_
 
+// helper to convert frequency to timer ticks
+#define FREQ_TO_TICKS(x) ((F_CPU / 2) / (x))
+
 // channel select defs
 #define PIT_CH0 0x00
 #define PIT_CH1 0x01
